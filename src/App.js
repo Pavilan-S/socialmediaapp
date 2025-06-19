@@ -8,12 +8,8 @@ import Missing from './Missing';
 import Footer from './Footer';
 import Header from './Header';
 import EditPost from './EditPost';
-import React, { useState, useEffect } from 'react';
-import { format, set } from 'date-fns';
-import { Routes, Route, useNavigate, useParams } from 'react-router-dom';
-import api from './API/posts';
+import { Routes, Route } from 'react-router-dom';
 import { DataProvider } from './context/DataContext';
-
 
 function App() {
   return (

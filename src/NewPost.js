@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import DataContext, { DataProvider } from './context/DataContext'
+import DataContext from './context/DataContext'
 
 const NewPost = () => {
   const {handleSubmit,postTitle,setPostTitle,postBody,setPostBody} = useContext(DataContext)

@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import Feed from './Feed'
-import DataContext, { DataProvider } from './context/DataContext'
+import DataContext from './context/DataContext' 
 
 const Home = () => {
   const {searchResults}=useContext(DataContext)

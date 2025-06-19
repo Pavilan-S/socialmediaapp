@@ -1,7 +1,3 @@
-import React, { use } from 'react'
-import { useContext } from 'react'
-import { DataProvider } from './context/DataContext'  
-import { FaMobileAlt, FaTabletAlt, FaDesktop } from 'react-icons/fa'
 const Header = ({title}) => {
   return (
     <header className="Header">

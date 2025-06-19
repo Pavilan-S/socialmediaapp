@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import DataContext, { DataProvider } from './context/DataContext';
 import { useContext } from 'react';
+import DataContext from './context/DataContext';
 
 const EditPost = () => {
   const { posts, handleedit, postTitle, setPostTitle, postBody, setPostBody } =useContext(DataContext);

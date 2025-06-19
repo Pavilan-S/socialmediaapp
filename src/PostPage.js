@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import DataContext, { DataProvider } from './context/DataContext';
+import DataContext from './context/DataContext';
 
 const PostPage = () => {
   const { id } = useParams();
