@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import DataContext from './context/DataContext'
 const Post = ({post}) => {
   return (
     <article className="Post">

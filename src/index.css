@@ -217,10 +217,13 @@ body {
 
 .deleteButton {
   background-color: red;
+  display:inline-block;
 }
+
 
 .editButton {
   background-color: #333;
+  display: inline-block ;
 }
 
 .statusMsg {

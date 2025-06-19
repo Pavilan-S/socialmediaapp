@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link, useParams } from 'react-router-dom';
+import DataContext, { DataProvider } from './context/DataContext';
 
-const PostPage = ({ posts, handleDelete }) => {
+const PostPage = () => {
   const { id } = useParams();
-
+  const {posts,handleDelete} = useContext(DataContext)
   if (!posts.length) return <p>Loading post...</p>;
 
   const post = posts.find(post => post.id === Number(id)); // Ensure numeric comparison
@@ -27,7 +28,6 @@ const PostPage = ({ posts, handleDelete }) => {
         <p className="PostDate">{post.datetime}</p>
         <p className="PostBody">{post.body}</p>
         <button className="deleteButton" onClick={() => handleDelete(post.id)}>Delete</button>
-        <br />
         <Link to={`/edit/${post.id}`}>
           <button className="editButton">Edit</button>
         </Link>
